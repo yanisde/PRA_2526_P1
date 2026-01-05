@@ -4,6 +4,8 @@
 template <typename T> 
 class List {
     public:
+         virtual ~List(){
+		 }
         virtual void insert(int pos, T e) = 0;
 	virtual void append(T e) = 0;
 	virtual void prepend(T e) = 0;
