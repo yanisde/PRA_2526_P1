@@ -31,13 +31,13 @@ Square::Square() : Rectangle() {
 Square::Square(std::string color, Point2D* vertices) : Rectangle(color, vertices) {
     if (!check(vertices))
         throw std::invalid_argument("vertices invalidos");
-    // Rectangle(color, vertices) ya copió; pero garantizamos condición de cuadrado
+    
 }
 
 void Square::set_vertices(Point2D* vertices) {
     if (!check(vertices))
         throw std::invalid_argument("vertices invalidos");
-    // vs es protected en Rectangle
+    
     for (int i = 0; i < N_VERTICES; i++)
         vs[i] = vertices[i];
 }
