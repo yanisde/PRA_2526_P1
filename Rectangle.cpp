@@ -74,7 +74,7 @@ Rectangle& Rectangle::operator=(const Rectangle& r) {
     return *this;
 }
 
-// Para el rectángulo asumimos lados: v0-v1 y v1-v2
+
 double Rectangle::area() const {
     double a = Point2D::distance(vs[0], vs[1]);
     double b = Point2D::distance(vs[1], vs[2]);
